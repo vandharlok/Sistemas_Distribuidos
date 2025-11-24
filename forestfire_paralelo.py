@@ -1,7 +1,7 @@
 import numpy as np
 import time
 import threading
-
+import  matplotlib.pyplot as plt
 # ---------- PARÂMETROS ----------
 N = 200
 p = 0.3
@@ -58,3 +58,8 @@ with open("tempoSimulacao.txt", "a") as f:
     f.write(f"Tempo paralelo ({num_threads} threads): {tempo_paralelo:.2f} ms\n")
 
 print(f"✅ Simulação paralela concluída com {num_threads} threads em {tempo_paralelo:.2f} ms")
+
+
+plt.imshow(forest, cmap='hot', interpolation='nearest')
+plt.title(f"Forest Fire - Último passo ({num_threads} threads)")
+plt.show()
