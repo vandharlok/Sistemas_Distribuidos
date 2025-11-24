@@ -1,0 +1,4 @@
+Tempo sequencial: 276.02 ms
+Tempo paralelo (4 threads): 319.00 ms
+Tempo distribuído (servidor): 292.38 ms
+Tempo total (cliente + servidor): 295.87 ms
